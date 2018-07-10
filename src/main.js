@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import store from './store'
 import VueChatScroll from 'vue-chat-scroll'
 
 Vue.use(VueChatScroll)
@@ -19,6 +18,5 @@ Vue.filter('truncate', function(value) {
 });
 
 new Vue({
-  store,
   render: h => h(App)
 }).$mount('#app')
